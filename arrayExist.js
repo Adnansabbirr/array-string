@@ -1,4 +1,7 @@
 function megaFriends(friends){
+    if(Array.isArray(friends)==false){
+        return 'plese provide me an array';
+    }
     let megaBondhu=friends[0];
     for(const friend of friends){
         if(friend.length>megaBondhu.length){
